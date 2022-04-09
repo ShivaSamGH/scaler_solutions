@@ -13,7 +13,7 @@ public class AddBinaryStrings {
 		}
 		StringBuilder result = new StringBuilder();
 		char carry = '0';
-		for ( int i = A.length() - 1; i >= 0; i-- ) {
+		for ( int i = A.length() - 1; i >= 0; i-- )
 			switch ("" + carry + A.charAt(i) + B.charAt(i)) {
 				case ("000") -> {
 					result.insert(0, "0");
@@ -32,7 +32,6 @@ public class AddBinaryStrings {
 					carry = '1';
 				}
 			}
-		}
 		if (carry == '1') {
 			result.insert(0, "1");
 		}
